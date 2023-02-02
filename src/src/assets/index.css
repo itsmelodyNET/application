@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-weight: 300;
+}
+
+html {
+    background-color: #0B0B0B;
+}
+
+.bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+
+.bg img {
+    width: 100%;
+    height: 100%;
+    filter: blur(70px) opacity(50%);
+}
+
+main {
+    position: relative;
+    overflow: hidden;
+}
+
+.logo {
+    display: block;
+    position: fixed;
+    width: 20rem;
+    margin-top: 10rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+.live {
+    display: flex;
+    justify-content: space-around;
+    z-index: 5;
+    height: 100vh;
+    background-color: rgba(0, 194, 194, 0.151);
+}
+
+.song {
+    display: flex;
+    align-items: center;
+}
+
+.album-art {
+    width: 12rem;
+    border-radius: 10%;
+    box-shadow: rgba(0, 0, 0, 0.267) 0px 1px 10px;
+    margin: 10px;
+}
+
+.song-title {
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.song-artist {
+    font-size: 1.2rem;
+}
+
+.presenter {
+    display: flex;
+    align-items: center;
+}
+
+.presenter-photo {
+    width: 12rem;
+    border-radius: 10%;
+    box-shadow: rgba(0, 0, 0, 0.267) 0px 1px 10px;
+    margin: 10px;
+}
+
+.presenter-title {
+    font-weight: 600;
+    font-size: 2rem;
+    text-align: right;
+}
+
+.presenter-artist {
+    font-size: 1.2rem;
+    text-align: right;
+}
+
+.bottom {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    bottom: 7rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.controls {
+    width: 15rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0.3rem;
+    border-radius: 12px;
+    transition: 1s;
+}
+
+.playpause {
+    font-size: 2.5rem;
+    width: 2.5rem;
+    transition: 0.2s;
+}
+
+.like {
+    font-size: 2rem;
+    color: grey;
+}
+
+.request {
+    font-size: 2rem;
+    color: grey;
+}
+
+.slider {
+    -webkit-appearance: none;
+    margin-top: 1rem;
+    width: 100%;
+    height: 7px;
+    background: rgba(255, 255, 255, 0.082);
+    border-radius: 5px;
+    background-image: rgb(255, 255, 255);
+    background-repeat: no-repeat;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    background: #ffffffc4;
+    cursor: ew-resize;
+    box-shadow: 0 0 2px 0 #555;
+    transition: background .3s ease-in-out;
+}
